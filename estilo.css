@@ -1,0 +1,370 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+background-color: rgb(0, 0, 0);
+}
+
+.Foto1{
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 50%;
+}
+
+header{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: yellow;
+    background: rgb(35,36,0);
+background: linear-gradient(90deg, rgba(35,36,0,1) 0%, rgba(255,209,0,1) 100%);
+}
+
+header nav{
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.377);
+}
+
+.titulo{
+    padding-left: 18px;
+    padding-bottom: 10px;
+}
+
+
+ul{
+    list-style: none;
+    padding: 5px;
+
+}
+
+li{
+    display:inline-block;
+    position:relative;
+    font-size: 25px;
+    margin: 10px 20px;
+}
+
+ul ul{
+    position: absolute;
+    display: none;
+    font-size: 20px;
+}
+
+ul ul li{
+    display: block;
+    font-size: 20px;
+    text-align: left;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;   
+}
+a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.tran1:hover{
+transition: all 2s ease;
+}
+
+.P1{
+    color: rgb(253, 253, 253);
+    font-size: 24px;
+    margin-left: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.Borde{
+    margin-left: 1rem;
+    margin-top: 10px;
+    max-width: 300px;
+    max-height: 590px;
+    border-radius: 10px;
+    border-color: rgb(76, 204, 40);
+    color: rgb(0, 0, 0);
+    background-image: url(./fotos/istockphoto-1323037452-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div{
+    font-family: 'Oswald', sans-serif;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+
+}
+
+.Pais{
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.Botones{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.CEO{
+    margin-left: 10px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.subt{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 10px;
+    color: yellow;
+    text-decoration:underline;
+}
+
+p{
+    margin-left: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.contenedor{
+    width: 95%;
+    height: 550px;
+    border-style:ridge ;
+    border-color: rgb(0, 0, 0);
+    text-align: left;   
+    margin-top: 5px;
+    margin-left: 1rem; 
+    margin-right: 0.5rem;
+}
+  
+section p{
+    color: white;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;   
+}
+
+section h2{
+    text-align: center;
+    color: yellow;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: underline green;
+    padding-top: 0.5rem;
+}
+
+footer{
+    margin-bottom: 5rem;
+}
+
+.formulario{
+    max-width: 250px;
+}
+
+
+.grid{
+    max-width: 100%;
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "formulario contenedor contenedor"
+    "formulario contenedor contenedor"
+    "footer footer footer"
+}
+
+.grid > main,
+.grid .header,
+.grid .formulario,
+.grid .contenedor,
+.grid .footer{
+    grid-area: footer;
+}
+
+.grid .header{
+    grid-area: header;
+}
+
+.grid .formulario{
+    grid-area: formulario;
+}
+
+.grid .contenedor{
+    grid-area: contenedor;
+}
+
+.grid1{
+    max-width: 100%;
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.1fr 0.5fr 1fr;
+    grid-template-areas: 
+    "header1 header1 header1"
+    "texto1 texto1 texto1"
+    "fotosdiv fotosdiv fotosdiv"
+    "footer1 footer1 footer1"
+}
+
+.grid1 > main,
+.grid1 .header1,
+.grid1 .texto1,
+.grid1 .fotosdiv,
+.grid1 .footer1{
+    grid-area: footer1;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.grid1 .header1{
+    grid-area: header1 ;
+    text-align: left;
+}
+
+.grid1 .texto1{
+    width: 100%;
+    grid-area: texto1 ;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.grid1 .fotosdiv{
+    grid-area: fotosdiv ;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.grid2{
+    max-width: 100%;
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 268px 1fr;
+    grid-template-areas: 
+    "header2 header2 header2"
+    "fotosdiv1 texto2 texto2"
+    "fotosdiv1 texto2 texto2"
+    "footer2 footer2 footer2" 
+}
+
+.grid2 > main,
+.grid2 .header2,
+.grid2 .texto2,
+.grid2 .fotosdiv1,
+.grid2 .footer2{
+    grid-area: footer2;
+    text-align: left;
+    
+}
+
+.grid2 .header2{
+    grid-area: header2 ;
+    text-align: left;
+}
+.header2 nav{
+    margin-top: 15px;
+}
+
+.grid2 .texto2{
+    width: 95%;
+    grid-area: texto2 ;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.grid2 .fotosdiv1{
+    grid-area: fotosdiv1 ;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+
+@media screen and (max-width: 550px){
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 570px 2.3fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "formulario formulario formulario"
+        "contenedor contenedor contenedor"
+        "footer footer footer";    
+    }
+}
+@media screen and (min-width: 768px){
+    .grid{
+        grid-template-columns: 265px 1fr 1fr;
+        grid-template-rows: repeat(4, 0.5fr);
+        grid-template-areas:
+        "header header header"
+        "formulario contenedor contenedor"
+        "formulario contenedor contenedor"
+        "footer footer contenedor";
+    }
+}
+
+@media screen and (max-width: 550px){
+    .grid1{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1fr 0.4fr;
+        grid-template-areas: 
+        "header1 header1 header1"
+        "texto1 texto1 texto1"
+        "fotosdiv fotosdiv fotosdiv"
+        "footer1 footer1 footer1";    
+    }
+}
+@media screen and (min-width: 768px){
+    .grid1{
+        grid-template-columns: 2fr;
+        grid-template-rows: 0.4fr 1fr 0.4fr;
+        grid-template-areas: 
+        "header1 header1 header1"
+        "texto1 texto1 texto1"
+        "fotosdiv fotosdiv fotosdiv"
+        "footer1 footer1 footer1";
+    }
+}
+
+@media screen and (max-width: 550px){
+    .grid2{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.5fr 1fr;
+        grid-template-areas: 
+        "header2 header2 header2"
+        "fotosdiv1 texto2 texto2"
+        "footer2 texto2 texto2";    
+    }
+}
+@media screen and (min-width: 768px){
+    .grid2{
+        grid-template-columns: 0.2fr 1fr;
+        grid-template-rows: 0.4fr 1fr 0.4fr;
+        grid-template-areas: 
+        "header2 header2 header2"
+        "fotosdiv1 texto2 texto2"
+        "footer2 texto2 texto2"
+        ;
+    }
+}
+
+
+
+
+
