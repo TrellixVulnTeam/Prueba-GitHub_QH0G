@@ -9,10 +9,11 @@ background-color: rgb(0, 0, 0);
 }
 
 .Foto1{
-    margin-top: 15px;
-    margin-left: 10px;
+    margin-top: 12px;
+    margin-left: 15px;
     border-radius: 50%;
 }
+
 
 header{
     font-family: 'Roboto Condensed', sans-serif;
@@ -26,13 +27,21 @@ background: linear-gradient(90deg, rgba(35,36,0,1) 0%, rgba(255,209,0,1) 100%);
 header nav{
     text-align: left;
     background-color: rgba(0, 0, 0, 0.377);
+    transition: all 3s ease;
+}
+nav:hover{
+    background-color: rgba(9, 68, 1, 0.596);
 }
 
 .titulo{
-    padding-left: 18px;
-    padding-bottom: 10px;
+    padding-left: 15px;
 }
-
+.titulo1{
+    padding-left: 15px;
+}
+.titulo2{
+    padding-left: 15px;
+}
 
 ul{
     list-style: none;
@@ -63,6 +72,7 @@ a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: 'Oswald', sans-serif;   
+    transition: all 2.5s ease;
 }
 a:hover{
     color: rgb(0, 0, 0);
@@ -75,6 +85,11 @@ a:hover{
     margin-left: 15px;
     text-align: left;
     font-weight: bold;
+    padding-bottom: 5px;
+}
+.P1:hover{
+    font-size: 26px;
+    color: rgb(0, 0, 0);
 }
 
 .Borde{
@@ -117,6 +132,11 @@ div{
     color: white;
     font-size: 20px;
     margin-bottom: 1rem;
+    transition: all 3s ease;
+}
+.CEO:hover {
+    font-size: 25px;
+    color: yellow;
 }
 
 .subt{
@@ -134,21 +154,27 @@ p{
 }
 
 
+
+
 .contenedor{
     width: 95%;
     height: 550px;
     border-style:ridge ;
     border-color: rgb(0, 0, 0);
     text-align: left;   
-    margin-top: 5px;
+    padding-top: 5px;
     margin-left: 1rem; 
     margin-right: 0.5rem;
 }
   
 section p{
     color: white;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;   
+    font-size: 22.5px;
+    font-family: 'Oswald', sans-serif;
+    transition: all 3s ease;
+}
+section p:hover{
+    font-size: 23.5px;
 }
 
 section h2{
@@ -173,7 +199,7 @@ footer{
     max-height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 0.4fr 2fr 0.5fr;
     grid-template-areas: 
     "header header header"
     "formulario contenedor contenedor"
@@ -188,10 +214,12 @@ footer{
 .grid .footer{
     grid-area: footer;
     text-align: center;
+    padding-top: 5px;
 }
 
 .grid .header{
     grid-area: header;
+    text-align: left;
 }
 
 .grid .formulario{
@@ -200,6 +228,7 @@ footer{
 
 .grid .contenedor{
     grid-area: contenedor;
+    text-align: left;
 }
 
 .grid1{
@@ -227,22 +256,31 @@ footer{
 
 .grid1 .header1{
     grid-area: header1 ;
-    text-align: left;
+    text-align: center;
+}
+.header1 nav{
+    margin-top: 10px;
+    text-align:center;
 }
 
 .grid1 .texto1{
-    width: 100%;
+    margin: auto;
+    width: 90%;
     grid-area: texto1 ;
     padding-top: 10px;
-    text-align: left;
+    text-align: center;
 }
 
 .grid1 .fotosdiv{
     grid-area: fotosdiv ;
-    margin-top: 25px;
+    padding-top: 15px;
+    margin-left: 5rem;
+    margin-right: 5rem;
     display: flex;
-    justify-content: space-between;
-    text-align: center;
+    flex-direction: 
+    row;
+    justify-content: space-evenly;
+    text-align: left;
 }
 
 .grid2{
@@ -265,28 +303,30 @@ footer{
 .grid2 .footer2{
     grid-area: footer2;
     text-align: center;
+    padding-top: 15px;
     
 }
 
 .grid2 .header2{
     grid-area: header2 ;
-    text-align: left;
+    text-align: center;
 }
 .header2 nav{
-    margin-top: 15px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .grid2 .texto2{
     width: 95%;
     grid-area: texto2 ;
-    margin-top: 10px;
+    padding-top: 10px;
     margin-left: 15px;
     text-align: left;
 }
 
 .grid2 .fotosdiv1{
     grid-area: fotosdiv1;
-    margin-top: 10px;
+    padding-top: 5px;
     margin-left: 20px;
     display: flex;
     flex-direction: column;
@@ -296,7 +336,7 @@ footer{
 @media screen and (max-width: 550px){
     .grid{
         grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 570px 2.3fr 1fr;
+        grid-template-rows: 0.4fr 570px 2.6fr 0.5fr;
         grid-template-areas: 
         "header header header"
         "formulario formulario formulario"
@@ -307,7 +347,7 @@ footer{
 @media screen and (min-width: 768px){
     .grid{
         grid-template-columns: 265px 1fr 1fr;
-        grid-template-rows: repeat(4, 0.5fr);
+        grid-template-rows: 0.4fr 2fr 0.22fr;
         grid-template-areas:
         "header header header"
         "formulario contenedor contenedor"
@@ -318,7 +358,7 @@ footer{
 
 @media screen and (max-width: 550px){
     .grid1{
-        grid-template-columns: 1fr;
+        grid-template-columns: 0.2fr;
         grid-template-rows: 0.4fr 1fr 0.4fr;
         grid-template-areas: 
         "header1 header1 header1"
