@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
     <title>Establecimiento Tango</title>
     <link rel="shortcut icon" href="./favicon_io (2)/favicon-32x32.png">
@@ -15,9 +16,11 @@
   <main class="grid1">
      <header class="header1">
         <img src="./fotos/images.png" alt="Logo de empresa" width="100px" class="Foto1"><br>
-        <h2 class="titulo2">
-          Establecimiento Tango S.R.L
+        <section class="">
+        <h2 class="titulo2 fs-1 text-decoration-none">
+         <strong>Establecimiento Tango S.R.L</strong>
         </h2>
+        </section>
        
      <nav>
         <ul>
@@ -28,17 +31,21 @@
      </nav>
      </header>
     
-      <section class="texto1">
-        <h2>
-         Te mostramos lo que hacemos
+      <section class="texto1 lh-sm">
+        <h2 class="fs-2"> 
+          <em>
+            Te mostramos lo que hacemos
+          </em>
         </h2>  
         <p>
           Mantenemos nuestras colmenas en diferentes áreas totalmente naturales ubicadas en el delta del río Paraná. Debido a eso, producimos miel orgánica y contamos con una planta de extracción aprobada para su cumplimiento.
           <br>
           Controlamos constantemente la calidad de nuestra miel en todos los niveles. La prueba es, entre otras cosas, cientos de clientes satisfechos y fieles a nuestra empresa.
         </p>
-        <h2>
+        <h2 class="fs-2"> 
+          <em>
             ¿Por qué consumir nuestros productos?
+          </em>
         </h2>
         <p>
             La miel, al ser un endulzante natural no procesado químicamente, es un endulzante de fácil digestión y aporta mucha energía al cuerpo humano. <br>
@@ -46,15 +53,33 @@
             Las abejas han desarrollado fuertes mecanismos de defensa para sus colmenas mediante el desarrollo de productos naturales y ese mismo principio de equilibrio se traduce en un impacto positivo en la salud del ser humano.
         </p>
       </section>
-      <section>
-        <div class="fotosdiv">
-          <img src="./fotos/Miel.jpg" width="180px" height="150px">
-          <img src="./fotos/polen.webp" width="180px" height="150px">
-          <img src="./fotos/jalea real.jpg" width="180px" height="150px">
-          <img src="./fotos/propolio.jpg"  width="180px" height="150px">    
-      </div> 
+      <section class="container">
+        <div class="container1">
+          <div id="carouselExampleControls" class="carousel slide w-50 mx-auto" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./fotos/Miel.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./fotos/polen.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./fotos/propolio.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> 
+        </div>
+        
       </section>
-     <br> 
+     <br>
      <footer class="footer1">
         <img src="./fotos/images.png" alt="Logo de la empresa" width="100px" class="Foto1">
         <h2 class="subt">
@@ -68,5 +93,7 @@
         </p>   
      </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

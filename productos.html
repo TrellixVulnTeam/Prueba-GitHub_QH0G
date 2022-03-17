@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
     <title>Establecimiento Tango</title>
     <link rel="shortcut icon" href="./favicon_io (2)/favicon-32x32.png">
@@ -30,34 +31,72 @@
     
     
      <section class="texto2">
-        
         <h2>
             ¿Por qué consumir nuestros productos?
         </h2>
         <p>
             La miel, al ser un endulzante natural no procesado químicamente, es un endulzante de fácil digestión y aporta mucha energía al cuerpo humano.
             Los productos derivados de la colmena como el pólen, propóleo y la jalea real contienen activos necesarios para la dieta humana. <br> <br>
-            
-            La miel de abeja cuenta con vitaminas, aminoácidos, antioxidantes, minerales y enzimas que pueden influir en el alivio de los síntomas de la gripe, en el cuidado de la piel, fortalece el sistema inmunológico y mejora la calidad del sueño. <br> <br>
-
-            El consumo regular de polen fresco ayuda a muchas de las funciones orgánicas pues contiene todos los elementos esenciales para la vida de manera muy integral, complementa tu dieta con su fuente de vitaminas, proteínas vegetales, hierro, zinc y Selenio. <br> <br>
-
-            El propóleo es un material similar a la resina fabricado por las abejas a partir de las yemas de los álamos y los árboles conos. Las abejas lo usan para construir colmenas y puede contener subproductos de las colmenas. El propóleo parece ayudar a combatir bacterias, virus y hongos. <br> <br>
-
-            La jalea real que suele recomendarse como revitalizante en casos de fatiga, agotamiento y cansancio, o también para estimular el apetito. Algunos estudios apuntan además a la actuación de las proteínas de la jalea real en el sistema inmunitario. <br> <br>
-
             Las abejas han desarrollado fuertes mecanismos de defensa para sus colmenas mediante el desarrollo de productos naturales y ese mismo principio de equilibrio se traduce en un impacto positivo en la salud del ser humano.
         </p>  
      </section>
-     <section>
-        <div class="fotosdiv1">
-            <img src="./fotos/Miel.jpg" width="180px" height="150px">
-          <img src="./fotos/polen.webp" width="180px" height="150px">
-          <img src="./fotos/jalea real.jpg" width="180px" height="150px">
-          <img src="./fotos/propolio.jpg"  width="180px" height="150px">
+     <br>
+     <section class="container">
+       <div class="container2">
+        <div class="card mb-3 bg-secondary" style="max-width: 85%;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./fotos/Miel.jpg" class="img-fluid  p-2" style="width: 475px; height: 320px;" alt="...">
+            </div>
+            <div class="col-md-8 row">
+              <div class="card-body">
+                <h5 class="card-title text-warning fs-2"> Nuestra Miel</h5>
+                <p class="card-text text-white">La miel de abeja cuenta con vitaminas, aminoácidos, antioxidantes, minerales y enzimas que pueden influir en el alivio de los síntomas de la gripe, en el cuidado de la piel, fortalece el sistema inmunológico y mejora la calidad del sueño.</p>
+              </div>
+            </div>
+          </div>
         </div>
-     </section>
-     <br> 
+        <div class="card mb-3 bg-secondary" style="max-width: 85% ;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./fotos/polen.webp" class="img-fluid p-2" style="width: 475px; height: 320px;" alt="...">
+            </div>
+            <div class="col-md-8 row">
+              <div class="card-body">
+                <h5 class="card-title text-warning fs-2"> Polen de abeja</h5>
+                <p class="card-text text-white">El consumo regular de polen fresco ayuda a muchas de las funciones orgánicas pues contiene todos los elementos esenciales para la vida de manera muy integral, complementa tu dieta con su fuente de vitaminas, proteínas vegetales, hierro, zinc y Selenio.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-secondary" style="max-width: 85% ;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./fotos/jalea real.jpg" class="img-fluid p-2" style="width: 475px; height: 320px;" alt="...">
+            </div>
+            <div class="col-md-8 row">
+              <div class="card-body">
+                <h5 class="card-title text-warning fs-2"> Jalea real</h5>
+                <p class="card-text text-white">La jalea real que suele recomendarse como revitalizante en casos de fatiga, agotamiento y cansancio, o también para estimular el apetito. Algunos estudios apuntan además a la actuación de las proteínas de la jalea real en el sistema inmunitario.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 bg-secondary" style="max-width: 85% ;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./fotos/propolio.jpg" class="img-fluid p-2" style="width: 475px; height: 320px;" alt="...">
+            </div>
+            <div class="col-md-8 row">
+              <div class="card-body bg-secondary">
+                <h5 class="card-title text-warning fs-2">Propoleo</h5>
+                <p class="card-text text-white">El propóleo es un material similar a la resina fabricado por las abejas a partir de las yemas de los álamos y los árboles conos. Las abejas lo usan para construir colmenas y puede contener subproductos de las colmenas. El propóleo parece ayudar a combatir bacterias, virus y hongos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+     </section> 
      <footer class="footer2">
         <img src="./fotos/images.png" alt="Logo de la empresa" width="100px" class="Foto1">
         <h2 class="subt">
@@ -72,5 +111,7 @@
         
      </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -9,16 +9,16 @@ background-color: rgb(0, 0, 0);
 }
 
 .Foto1{
-    margin-top: 12px;
-    margin-left: 15px;
+    margin-top: 13.5px;
+    margin-left: 5px;
     border-radius: 50%;
 }
 
 
 header{
     font-family: 'Roboto Condensed', sans-serif;
+    height: 291px;
     font-size: 30px;
-    margin-bottom: 10px;
     color: yellow;
     background: rgb(35,36,0);
 background: linear-gradient(90deg, rgba(35,36,0,1) 0%, rgba(255,209,0,1) 100%);
@@ -30,7 +30,7 @@ header nav{
     transition: all 3s ease;
 }
 nav:hover{
-    background-color: rgba(9, 68, 1, 0.596);
+    background-color: rgba(8, 65, 1, 0.473);
 }
 
 .titulo{
@@ -83,14 +83,15 @@ a:hover{
     color: rgb(253, 253, 253);
     font-size: 24px;
     margin-left: 15px;
+    
     text-align: left;
     font-weight: bold;
-    padding-bottom: 5px;
+    transition: all 2s ease;
 }
 .P1:hover{
-    font-size: 26px;
     color: rgb(0, 0, 0);
 }
+
 
 .Borde{
     margin-left: 1rem;
@@ -98,7 +99,7 @@ a:hover{
     max-width: 300px;
     max-height: 590px;
     border-radius: 10px;
-    border-color: rgb(76, 204, 40);
+    border-color: rgb(0, 0, 0);
     color: rgb(0, 0, 0);
     background-image: url(./fotos/istockphoto-1323037452-612x612.jpg);
     background-repeat: no-repeat;
@@ -129,7 +130,7 @@ div{
 
 .CEO{
     margin-left: 10px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 20px;
     margin-bottom: 1rem;
     transition: all 3s ease;
@@ -148,7 +149,7 @@ div{
 
 p{
     margin-left: 5px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
 }
@@ -158,7 +159,7 @@ p{
 
 .contenedor{
     width: 95%;
-    height: 550px;
+    height: 650px;
     border-style:ridge ;
     border-color: rgb(0, 0, 0);
     text-align: left;   
@@ -168,13 +169,13 @@ p{
 }
   
 section p{
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 22.5px;
     font-family: 'Oswald', sans-serif;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
-section p:hover{
-    font-size: 23.5px;
+p:hover{
+    color: rgb(6, 168, 1);
 }
 
 section h2{
@@ -199,11 +200,12 @@ footer{
     max-height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.4fr 2fr 0.5fr;
+    grid-template-rows: 0.4fr 2fr 1fr 1fr;
     grid-template-areas: 
     "header header header"
     "formulario contenedor contenedor"
     "formulario contenedor contenedor"
+    "container container container"
     "footer footer footer"
 }
 
@@ -211,6 +213,7 @@ footer{
 .grid .header,
 .grid .formulario,
 .grid .contenedor,
+.grid .container,
 .grid .footer{
     grid-area: footer;
     text-align: center;
@@ -231,6 +234,11 @@ footer{
     text-align: left;
 }
 
+.grid .container{
+    grid-area: container;
+    margin-top: 30px;
+}
+
 .grid1{
     max-width: 100%;
     max-height: 100%;
@@ -240,14 +248,14 @@ footer{
     grid-template-areas: 
     "header1 header1 header1"
     "texto1 texto1 texto1"
-    "fotosdiv fotosdiv fotosdiv"
+    "container1 container1 container1"
     "footer1 footer1 footer1"
 }
 
 .grid1 > main,
 .grid1 .header1,
 .grid1 .texto1,
-.grid1 .fotosdiv,
+.grid1 .container1,
 .grid1 .footer1{
     grid-area: footer1;
     padding-top: 15px;
@@ -271,16 +279,8 @@ footer{
     text-align: center;
 }
 
-.grid1 .fotosdiv{
-    grid-area: fotosdiv ;
-    padding-top: 15px;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    display: flex;
-    flex-direction: 
-    row;
-    justify-content: space-evenly;
-    text-align: left;
+.grid1 .container1{
+    grid-area: container1;
 }
 
 .grid2{
@@ -291,15 +291,15 @@ footer{
     grid-template-rows: 268px 1fr;
     grid-template-areas: 
     "header2 header2 header2"
-    "fotosdiv1 texto2 texto2"
-    "fotosdiv1 texto2 texto2"
+    "texto2 texto2 texto2"
+    "container2 container2 container2"
     "footer2 footer2 footer2" 
 }
 
 .grid2 > main,
 .grid2 .header2,
 .grid2 .texto2,
-.grid2 .fotosdiv1,
+.grid2 .container2,
 .grid2 .footer2{
     grid-area: footer2;
     text-align: center;
@@ -324,34 +324,33 @@ footer{
     text-align: left;
 }
 
-.grid2 .fotosdiv1{
-    grid-area: fotosdiv1;
+.grid2 .container2{
+    grid-area: container2;
     padding-top: 5px;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
+    text-align: left;
+    margin-right: 2rem;
 }
 
 @media screen and (max-width: 550px){
     .grid{
         grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 570px 2.6fr 0.5fr;
+        grid-template-rows: 0.5fr 630px 2.6fr 0.5fr;
         grid-template-areas: 
         "header header header"
         "formulario formulario formulario"
         "contenedor contenedor contenedor"
+        "container container container"
         "footer footer footer";    
     }
 }
 @media screen and (min-width: 768px){
     .grid{
         grid-template-columns: 265px 1fr 1fr;
-        grid-template-rows: 0.4fr 2fr 0.22fr;
+        grid-template-rows: 0.4fr 1.9fr;
         grid-template-areas:
         "header header header"
         "formulario contenedor contenedor"
-        "formulario contenedor contenedor"
+        "container container container"
         "footer footer contenedor";
     }
 }
@@ -363,7 +362,7 @@ footer{
         grid-template-areas: 
         "header1 header1 header1"
         "texto1 texto1 texto1"
-        "fotosdiv fotosdiv fotosdiv"
+        "container1 container1 container1"
         "footer1 footer1 footer1";    
     }
 }
@@ -374,7 +373,7 @@ footer{
         grid-template-areas: 
         "header1 header1 header1"
         "texto1 texto1 texto1"
-        "fotosdiv fotosdiv fotosdiv"
+        "container1 container1 container1"
         "footer1 footer1 footer1";
     }
 }
@@ -382,21 +381,22 @@ footer{
 @media screen and (max-width: 550px){
     .grid2{
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.5fr 0.2fr;
+        grid-template-rows: 0.1fr 0.125fr 1fr 0.1fr;
         grid-template-areas: 
         "header2 header2 header2"
-        "fotosdiv1 fotosdiv1 fotodiv1"
         "texto2 texto2 texto2"
+        "container2 container2 container2"
         "footer2 footer2 footer2";    
     }
 }
 @media screen and (min-width: 768px){
     .grid2{
-        grid-template-columns: 0.2fr 1fr;
-        grid-template-rows: 0.4fr 1fr 0.4fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.2fr 1fr 0.2fr;
         grid-template-areas: 
         "header2 header2 header2"
-        "fotosdiv1 texto2 texto2"
+        "texto2 texto2 texto2"
+        "container2 container2 container2"
         "footer2 footer2 footer2"
         ;
     }
