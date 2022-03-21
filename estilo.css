@@ -328,7 +328,6 @@ footer{
     grid-area: container2;
     padding-top: 5px;
     text-align: left;
-    margin-right: 2rem;
 }
 
 @media screen and (max-width: 550px){
