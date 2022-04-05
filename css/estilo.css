@@ -9,6 +9,7 @@ body {
 header {
   font-family: 'Roboto Condensed', sans-serif;
   height: 291px;
+  font-size: 30px;
   color: #ffff00;
   background: #232400;
   background: linear-gradient(90deg, #232400 0%, #ffd100 100%); }
@@ -19,7 +20,7 @@ header {
   header .titulo {
     padding-left: 15px; }
   header .P1 {
-    color: #fdfdfd;
+    color: #ffffff;
     font-size: 24px;
     margin-left: 15px;
     text-align: left;
@@ -27,7 +28,7 @@ header {
     padding-top: 4px;
     transition: all 2s ease; }
   header .P1:hover {
-    color: black; }
+    color: #000000; }
   header nav {
     text-align: left;
     background-color: #00000060;
@@ -52,32 +53,25 @@ header {
   header a {
     text-decoration: none;
     color: #ffffff;
-    font-family: 'Oswald', sans-serif;
-    transition: all 2.3s ease; }
-    header a a:hover {
-      color: black; }
+    font-family: 'Oswald', sans-serif; }
 
-.titulo1 {
-  padding-left: 15px; }
+.header3, .header4 {
+  text-align: center;
+  padding-top: 15px; }
+  .header3 h2, .header4 h2 {
+    padding-bottom: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 35px; }
+  .header3 nav, .header4 nav {
+    text-align: center; }
 
-.titulo2 {
-  padding-left: 15px; }
+.header4 h2 {
+  padding-bottom: 5px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 35px; }
 
-ul {
-  list-style: none;
-  margin-left: 15px; }
-
-li {
-  display: inline-block;
-  position: relative;
-  font-size: 25px;
-  margin: 10px 20px; }
-
-ul ul {
-  position: absolute;
-  display: none;
-  font-size: 20px;
-  margin-left: 15px; }
+.header4 nav {
+  text-align: center; }
 
 .formulario .Borde {
   text-align: center;
@@ -119,7 +113,7 @@ ul ul {
 p {
   margin-left: 5px;
   color: white;
-  font-size: 20px;
+  font-size: 23px;
   font-family: 'Oswald', sans-serif;
   transition: all 2s ease; }
 
@@ -144,7 +138,7 @@ p:hover {
   .contenedor .texto p {
     margin-left: 5px;
     color: white;
-    font-size: 20px;
+    font-size: 23px;
     font-family: 'Oswald', sans-serif;
     transition: all 2s ease; }
   .contenedor .texto p:hover {
@@ -171,6 +165,41 @@ p:hover {
 .texto2 .textop {
   text-align: left;
   padding-bottom: 15px; }
+
+.caja {
+  margin-top: 10px; }
+  .caja .section1 {
+    background-color: #000000;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px; }
+    .caja .section1 .apicultor {
+      text-align: center; }
+    .caja .section1 h2 {
+      text-align: center;
+      color: #ffff00;
+      text-decoration: underline #0eb90e;
+      font-family: 'Roboto Condensed', sans-serif; }
+    .caja .section1 p {
+      text-align: center;
+      padding-bottom: 15px;
+      font-size: 26px; }
+  .caja .section2 {
+    background-color: black;
+    width: 80%;
+    margin: auto; }
+    .caja .section2 .apicultor {
+      text-align: center; }
+    .caja .section2 h2 {
+      text-align: center;
+      color: #ffff00;
+      text-decoration: underline #0eb90e;
+      font-family: 'Roboto Condensed', sans-serif; }
+    .caja .section2 p {
+      text-align: center;
+      padding-bottom: 15px;
+      font-size: 26px; }
 
 footer {
   margin-bottom: 5rem;
@@ -284,13 +313,41 @@ footer {
   width: 95%;
   grid-area: texto2;
   padding-top: 10px;
-  margin-left: 15px;
+  margin-left: 30px;
   text-align: left; }
 
 .grid2 .container2 {
   grid-area: container2;
   padding-top: 5px;
   text-align: left; }
+
+.grid3 {
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 268px 1fr;
+  grid-template-areas: "header3 header3 header3 header3" "mapa mapa mapa mapa"; }
+
+.grid3 .header3, .grid3 .header4 {
+  grid-area: header3; }
+
+.grid3 .mapa {
+  grid-area: mapa; }
+
+.grid4 {
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.4px 1fr 0.4fr;
+  grid-template-areas: "header4 header4 header4 header4" "caja caja caja caja" "footer4 footer4 footer4"; }
+
+.grid4 .header4 {
+  grid-area: header4; }
+
+.grid4 .caja {
+  grid-area: caja; }
 
 @media screen and (max-width: 550px) {
   .grid {
@@ -327,3 +384,33 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 0.2fr 1fr 0.2fr;
     grid-template-areas: "header2 header2 header2" "texto2 texto2 texto2" "container2 container2 container2" "footer2 footer2 footer2"; } }
+
+@media screen and (max-width: 550px) {
+  .grid3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1fr;
+    grid-template-areas: "header3" "mapa"; } }
+
+@media screen and (min-width: 768px) {
+  .grid3 {
+    max-width: 100%;
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1fr;
+    grid-template-areas: "header3 header3 header3" "mapa mapa mapa"; } }
+
+@media screen and (max-width: 550px) {
+  .grid4 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-areas: "header4" "caja" "footer4"; } }
+
+@media screen and (min-width: 768px) {
+  .grid4 {
+    max-width: 100%;
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-areas: "header4 header4 header4" "caja caja caja" "footer4 footer4 footer4"; } }
